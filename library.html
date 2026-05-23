@@ -11,13 +11,27 @@
         <a href="library.html">Library</a>
         <a href="search.html">Search</a>
     </div> 
-    
-    <div class="banner">
-        <h1>Library</h1>
-    </div>
+
+    <br>
 
     <div class="search-container">
         <input type="text" id="searchInput" placeholder="Enter genre, author or key words...">
         <button id="searchButton">Search</button>
     </div>
+    
+    <div class="banner">
+        <h1>Library</h1>
+    </div>
+
+    <div class="container">
+        <nav class="genre-nav">
+  <button class="genre-btn active" onclick="filterBooks('all', this)">All Books</button>
+  <button class="genre-btn" onclick="filterBooks('horror', this)">Horror</button>
+  <button class="genre-btn" onclick="filterBooks('comedy', this)">Comedy</button>
+  <button class="genre-btn" onclick="filterBooks('romance', this)">Romance</button>
+  <button class="genre-btn" onclick="filterBooks('sci-fi', this)">Sci-Fi</button>
+</nav>
+    </div>
+
+
 </body>   
